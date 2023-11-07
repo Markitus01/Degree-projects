@@ -1,69 +1,241 @@
-html {
-  background-color: #303952;
+@media screen and (min-width: 1100px) {
+  html {
+    background-color: #303952;
+  }
+  html body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  html body header {
+    background-color: #e66767;
+    padding: 1vw;
+    margin-top: 1vw;
+    border-top: 2px solid #3dc1d3;
+  }
+  html body header #menuHandler {
+    display: none;
+  }
+  html body #menu {
+    color: white;
+    margin-bottom: 2vh;
+  }
+  html body #menu > ul {
+    display: flex;
+    justify-content: space-around;
+    height: 3vw;
+    align-items: center;
+  }
+  html body #menu > ul li {
+    flex: 1;
+    border: 1px solid #3dc1d3;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  html body main {
+    display: flex;
+    padding-top: 2vh;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    background-color: #ea878575;
+    height: 72vh;
+  }
+  html body main > section {
+    padding: 2vw;
+    border: 1px solid #f3a683;
+  }
+  html body main > section > h2,
+  html body main > section h1 {
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+  html body main > section > p {
+    font-size: 2.5vh;
+  }
+  html body main #contents {
+    order: 1;
+    background-color: #546de5;
+  }
+  html body main #rightc {
+    order: 2;
+    background-color: #e15f41;
+  }
+  html body main #rightc > img {
+    margin-top: 2vh;
+    width: 12vw;
+  }
+  html body main #leftc {
+    order: 3;
+    background-color: #574b90;
+  }
+  html body footer {
+    margin-top: auto;
+    background-color: #e66767;
+    padding: 1vw;
+    border-top: 2px solid #3dc1d3;
+    border-bottom: 2px solid #3dc1d3;
+  }
 }
-html body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+@media (min-width: 900px) and (max-width: 1100px) {
+  html {
+    background-color: #303952;
+  }
+  html body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  html body header {
+    background-color: #e66767;
+    padding: 1vw;
+    margin-top: 1vw;
+    border-top: 2px solid #3dc1d3;
+  }
+  html body header #menuHandler {
+    display: none;
+  }
+  html body #menu {
+    color: white;
+    margin-bottom: 2vh;
+  }
+  html body #menu > ul {
+    display: flex;
+    justify-content: space-around;
+    height: 3vw;
+    align-items: center;
+  }
+  html body #menu > ul li {
+    flex: 1;
+    border: 1px solid #3dc1d3;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  html body main {
+    display: flex;
+    padding-top: 2vh;
+    background-color: #ea878575;
+    height: 72vh;
+  }
+  html body main > section {
+    padding: 2vw;
+    border: 1px solid #f3a683;
+  }
+  html body main > section > h2,
+  html body main > section h1 {
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+  html body main > section > p {
+    font-size: 2.5vh;
+  }
+  html body main #contents {
+    order: 1;
+    background-color: #546de5;
+  }
+  html body main #rightc {
+    order: 2;
+    background-color: #e15f41;
+  }
+  html body main #rightc > img {
+    margin-top: 2vh;
+    width: 12vw;
+  }
+  html body main #leftc {
+    order: 3;
+    background-color: #574b90;
+  }
+  html body footer {
+    margin-top: auto;
+    background-color: #e66767;
+    padding: 1vw;
+    border-top: 2px solid #3dc1d3;
+    border-bottom: 2px solid #3dc1d3;
+  }
 }
-html body header {
-  display: flex;
-  background-color: #e66767;
-  justify-content: space-between;
-  padding: 1vw;
-  margin-top: 1vw;
-  border-top: 2px solid #3dc1d3;
-}
-html body header #menuHandler {
-  display: none;
-}
-html body #menu {
-  color: white;
-  margin-bottom: 2vh;
-}
-html body #menu > ul {
-  display: flex;
-  justify-content: space-around;
-  height: 3vw;
-  align-items: center;
-}
-html body #menu > ul li {
-  flex: 1;
-  border: 1px solid #3dc1d3;
-  height: 100%;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-html body main {
-  display: flex;
-  padding-top: 2vh;
-  margin-left: 9vw;
-  margin-right: 9vw;
-  background-color: #ea878575;
-}
-html body main > section {
-  padding: 2vw;
-  border: 1px solid #f3a683;
-}
-html body main > section > h2,
-html body main > section h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 2vh;
-}
-html body main #contents {
-  order: 1;
-  background-color: #546de5;
-}
-html body main #rightc {
-  order: 2;
-  background-color: #e15f41;
-}
-html body main #leftc {
-  order: 3;
-  background-color: #574b90;
-}
-html body footer {
-  margin-top: auto;
+@media (min-width: 600px) and (max-width: 900px) {
+  html {
+    background-color: #303952;
+  }
+  html body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  html body header {
+    background-color: #e66767;
+    padding: 1vw;
+    margin-top: 1vw;
+    border-top: 2px solid #3dc1d3;
+  }
+  html body header #menuHandler {
+    display: none;
+  }
+  html body #menu {
+    color: white;
+    margin-bottom: 2vh;
+  }
+  html body #menu > ul {
+    display: flex;
+    justify-content: space-around;
+    height: 3vw;
+    align-items: center;
+  }
+  html body #menu > ul li {
+    flex: 1;
+    border: 1px solid #3dc1d3;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  html body main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2vh;
+    background-color: #ea878575;
+  }
+  html body main > section {
+    flex: 1;
+    padding: 2vw;
+    border: 1px solid #f3a683;
+  }
+  html body main > section > h2,
+  html body main > section h1 {
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+  html body main > section > p {
+    font-size: 2.5vh;
+  }
+  html body main #contents {
+    order: 1;
+    background-color: #546de5;
+  }
+  html body main #rightc {
+    order: 2;
+    background-color: #e15f41;
+  }
+  html body main #rightc > img {
+    margin-top: 2vh;
+    width: 12vw;
+  }
+  html body main #leftc {
+    flex: auto;
+    order: 3;
+    background-color: #574b90;
+  }
+  html body footer {
+    margin-top: auto;
+    background-color: #e66767;
+    padding: 1vw;
+    border-top: 2px solid #3dc1d3;
+    border-bottom: 2px solid #3dc1d3;
+  }
 }

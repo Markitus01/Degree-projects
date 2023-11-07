@@ -1,94 +1,337 @@
-html 
+@media screen and (min-width: 1100px)
 {
-    background-color: #303952;
-
-    body
+    html 
     {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+        background-color: #303952;
 
-        header 
+        body
         {
             display: flex;
-            background-color: #e66767;
-            justify-content: space-between;
-            padding: 1vw;
-            margin-top: 1vw;
-            border-top: 2px solid #3dc1d3;
+            flex-direction: column;
+            min-height: 100vh;
 
-            #menuHandler
+            header 
             {
-                display: none;
+                background-color: #e66767;
+                padding: 1vw;
+                margin-top: 1vw;
+                border-top: 2px solid #3dc1d3;
+
+                #menuHandler
+                {
+                    display: none;
+                }
             }
-        }
-        
-        #menu
-        {
-            color: white;
-            margin-bottom: 2vh;
-            > ul 
+            
+            #menu
+            {
+                color: white;
+                margin-bottom: 2vh;
+                > ul 
+                {
+                    display: flex;
+                    justify-content: space-around;
+                    height: 3vw;
+                    align-items: center;
+                    
+                    li 
+                    {
+                        flex: 1; //Fa que els items ocupin tot l'espai del flex <ul> horitzontalment
+                        border: 1px solid #3dc1d3;
+                        height: 100%;
+
+                        //Fem flex a dins del li per centrar horitzontal i verticalment el text dins els <li>
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            main 
             {
                 display: flex;
-                justify-content: space-around;
-                height: 3vw;
-                align-items: center;
-                
-                li 
-                {
-                    flex: 1; //Fa que els items ocupin tot l'espai del flex <ul> horitzontalment
-                    border: 1px solid #3dc1d3;
-                    height: 100%;
+                padding-top: 2vh;
+                margin-left: 9vw;
+                margin-right: 9vw;
+                background-color: #ea878575;
+                height: 72vh;
 
-                    //Fem flex a dins del li per centrar horitzontal i verticalment el text dins els <li>
-                    display: grid;
-                    align-items: center;
-                    justify-content: center;
+                > section 
+                {
+                    padding: 2vw;
+                    border: 1px solid #f3a683;
+                    
+                    > h2, h1 
+                    {
+                        font-size: 4vh;
+                        font-weight: bold;
+                        margin-bottom: 2vh;
+                    }
+
+                    > p 
+                    {
+                        font-size: 2.5vh;
+                    }
+                }
+                #contents
+                {
+                    order: 1;
+                    background-color: #546de5;
+                }
+
+                #rightc
+                {
+                    order: 2;
+                    background-color: #e15f41;
+
+                    > img 
+                    {
+                        margin-top: 2vh;
+                        width: 12vw;
+                    }
+                }
+
+                #leftc
+                {
+                    order: 3;
+                    background-color: #574b90;
                 }
             }
-        }
 
-        main 
+            footer 
+            {
+                margin-top: auto;
+                background-color: #e66767;
+                padding: 1vw;
+                border-top: 2px solid #3dc1d3;
+                border-bottom: 2px solid #3dc1d3;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1100px)
+{
+    html 
+    {
+        background-color: #303952;
+
+        body
         {
             display: flex;
-            padding-top: 2vh;
-            margin-left: 9vw;
-            margin-right: 9vw;
-            background-color: #ea878575;
+            flex-direction: column;
+            min-height: 100vh;
 
-            > section 
+            header 
             {
-                padding: 2vw;
-                border: 1px solid #f3a683;
-                > h2, h1 
+                background-color: #e66767;
+                padding: 1vw;
+                margin-top: 1vw;
+                border-top: 2px solid #3dc1d3;
+
+                #menuHandler
                 {
-                    font-size: 24px;
-                    font-weight: bold;
-                    margin-bottom: 2vh;
+                    display: none;
                 }
             }
-            #contents
+            
+            #menu
             {
-                order: 1;
-                background-color: #546de5;
+                color: white;
+                margin-bottom: 2vh;
+                > ul 
+                {
+                    display: flex;
+                    justify-content: space-around;
+                    height: 3vw;
+                    align-items: center;
+                    
+                    li 
+                    {
+                        flex: 1; //Fa que els items ocupin tot l'espai del flex <ul> horitzontalment
+                        border: 1px solid #3dc1d3;
+                        height: 100%;
+
+                        //Fem flex a dins del li per centrar horitzontal i verticalment el text dins els <li>
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
             }
 
-            #rightc
+            main 
             {
-                order: 2;
-                background-color: #e15f41;
+                display: flex;
+                padding-top: 2vh;
+                background-color: #ea878575;
+                height: 72vh;
+
+                > section 
+                {
+                    padding: 2vw;
+                    border: 1px solid #f3a683;
+                    
+                    > h2, h1 
+                    {
+                        font-size: 4vh;
+                        font-weight: bold;
+                        margin-bottom: 2vh;
+                    }
+
+                    > p 
+                    {
+                        font-size: 2.5vh;
+                    }
+                }
+                #contents
+                {
+                    order: 1;
+                    background-color: #546de5;
+                }
+
+                #rightc
+                {
+                    order: 2;
+                    background-color: #e15f41;
+
+                    > img 
+                    {
+                        margin-top: 2vh;
+                        width: 12vw;
+                    }
+                }
+
+                #leftc
+                {
+                    order: 3;
+                    background-color: #574b90;
+                }
             }
 
-            #leftc
+            footer 
             {
-                order: 3;
-                background-color: #574b90;
+                margin-top: auto;
+                background-color: #e66767;
+                padding: 1vw;
+                border-top: 2px solid #3dc1d3;
+                border-bottom: 2px solid #3dc1d3;
             }
         }
+    }
+}
 
-        footer 
+@media (min-width: 600px) and (max-width: 900px)
+{
+    html 
+    {
+        background-color: #303952;
+
+        body
         {
-            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+            header 
+            {
+                background-color: #e66767;
+                padding: 1vw;
+                margin-top: 1vw;
+                border-top: 2px solid #3dc1d3;
+
+                #menuHandler
+                {
+                    display: none;
+                }
+            }
+            
+            #menu
+            {
+                color: white;
+                margin-bottom: 2vh;
+                > ul 
+                {
+                    display: flex;
+                    justify-content: space-around;
+                    height: 3vw;
+                    align-items: center;
+                    
+                    li 
+                    {
+                        flex: 1; //Fa que els items ocupin tot l'espai del flex <ul> horitzontalment
+                        border: 1px solid #3dc1d3;
+                        height: 100%;
+
+                        //Fem flex a dins del li per centrar horitzontal i verticalment el text dins els <li>
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            main 
+            {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 2vh;
+                background-color: #ea878575;
+
+                > section 
+                {
+                    flex: 1;
+                    padding: 2vw;
+                    border: 1px solid #f3a683;
+
+                    > h2, h1 
+                    {
+                        font-size: 4vh;
+                        font-weight: bold;
+                        margin-bottom: 2vh;
+                    }
+
+                    > p 
+                    {
+                        font-size: 2.5vh;
+                    }
+                }
+                #contents
+                {
+                    order: 1;
+                    background-color: #546de5;
+                }
+
+                #rightc
+                {
+                    order: 2;
+                    background-color: #e15f41;
+
+                    > img 
+                    {
+                        margin-top: 2vh;
+                        width: 12vw;
+                    }
+                }
+
+                #leftc
+                {
+                    //Aquest flex auto neteja el 'flex: 1;' que hem posat a section
+                    flex:auto;
+                    order: 3;
+                    background-color: #574b90;
+                }
+            }
+
+            footer 
+            {
+                margin-top: auto;
+                background-color: #e66767;
+                padding: 1vw;
+                border-top: 2px solid #3dc1d3;
+                border-bottom: 2px solid #3dc1d3;
+            }
         }
     }
 }
