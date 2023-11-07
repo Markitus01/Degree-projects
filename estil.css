@@ -1,0 +1,23 @@
+html {
+  background-color: #303952;
+}
+html body {
+  display: flex;
+  flex-direction: column;
+}
+html body header {
+  display: flex;
+  background-color: #e66767;
+  justify-content: space-between;
+  padding: 1vw;
+  margin-top: 1vw;
+  border-top: 2px solid #3dc1d3;
+  border-bottom: 2px solid #3dc1d3;
+}
+html body header #menuHandler {
+  display: none;
+}
+html body .menu {
+  display: flex;
+  flex-direction: row;
+}
