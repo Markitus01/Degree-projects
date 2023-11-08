@@ -107,6 +107,9 @@ html body footer {
   }
   html > body header #menuHandler {
     display: block;
+    background-color: #c44569;
+    border-radius: 15%;
+    padding: 0.5vw;
     margin-right: 1vw;
   }
   html > body .hidden_menu {
