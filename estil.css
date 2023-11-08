@@ -103,7 +103,6 @@ html body footer {
 @media (max-width: 600px) {
   html > body header {
     display: flex;
-    justify-content: space-between;
   }
   html > body header #menuHandler {
     display: block;
@@ -122,7 +121,8 @@ html body footer {
   }
   html > body #menu > ul li {
     width: 100%;
-    padding: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
   }
   html > body main {
     margin-top: 2vh;
