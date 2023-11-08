@@ -103,6 +103,7 @@ html body footer {
 @media (max-width: 600px) {
   html > body header {
     display: flex;
+    justify-content: space-between;
   }
   html > body header #menuHandler {
     display: block;
